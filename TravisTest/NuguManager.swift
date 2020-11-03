@@ -9,3 +9,10 @@ import Foundation
 
 import SilverTray
 
+class NuguManager {
+    init() {
+        if let player = try? DataStreamPlayer(decoder: OpusDecoder(sampleRate: 22050, channels: 1)) {
+            print("gooooooood: \(player)")
+        }
+    }
+}
